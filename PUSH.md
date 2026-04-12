@@ -24,7 +24,7 @@ git init
 git add .
 git commit -m "Initial: @hashlock/plugin-hashlock — ElizaOS plugin for Hashlock intent protocol"
 git branch -M main
-git remote add origin https://github.com/BarisSozen/plugin-hashlock.git
+git remote add origin https://github.com/Hashlock-Tech/plugin-hashlock.git
 git push -u origin main
 ```
 
@@ -32,7 +32,7 @@ git push -u origin main
 
 ## 3) Repo Settings → About → Topic ekle
 
-https://github.com/BarisSozen/plugin-hashlock → ⚙️ (sağ üstte, About kutusunun yanında)
+https://github.com/Hashlock-Tech/plugin-hashlock → ⚙️ (sağ üstte, About kutusunun yanında)
 
 - **Topics** alanına ekle: `elizaos-plugins`
 - (İstersen ek olarak: `eliza`, `defi`, `intents`, `attestation`, `agent`)
@@ -51,7 +51,7 @@ Fork'unda:
 2. `@esscrypt/plugin-polkadot` satırının **hemen sonrasına**, `@kamiyo/eliza` satırının **hemen öncesine** şu satırı ekle:
 
 ```json
-"@hashlock/plugin-hashlock": "github:BarisSozen/plugin-hashlock",
+"@hashlock/plugin-hashlock": "github:Hashlock-Tech/plugin-hashlock",
 ```
 
 Tam görünüm (referans için, çevresindeki satırlar):
@@ -59,7 +59,7 @@ Tam görünüm (referans için, çevresindeki satırlar):
 ```json
 "@erdgecrawl/plugin-base-signals": "github:erdGeclaw/plugin-base-signals",
 "@esscrypt/plugin-polkadot": "github:Esscrypt/plugin-polkadot",
-"@hashlock/plugin-hashlock": "github:BarisSozen/plugin-hashlock",
+"@hashlock/plugin-hashlock": "github:Hashlock-Tech/plugin-hashlock",
 "@kamiyo/eliza": "github:kamiyo-ai/kamiyo-protocol#main:packages/kamiyo-eliza",
 "@kudo-dev/plugin-kudo": "github:Kudo-Archi/plugin-kudo",
 ```
@@ -70,7 +70,7 @@ Tam görünüm (referans için, çevresindeki satırlar):
 
    > Adds `@hashlock/plugin-hashlock` — ElizaOS plugin for the Hashlock intent protocol with counterparty attestation tier gating (NONE → INSTITUTIONAL).
    >
-   > - Repo: https://github.com/BarisSozen/plugin-hashlock
+   > - Repo: https://github.com/Hashlock-Tech/plugin-hashlock
    > - Topic `elizaos-plugins`: ✅
    > - Images: ✅ (`logo.png` 400×400, `banner.png` 1280×640)
    > - `agentConfig.pluginType`: `elizaos:plugin:1.0.0` ✅

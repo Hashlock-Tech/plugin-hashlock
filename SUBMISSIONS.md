@@ -15,14 +15,14 @@ Five distinct submission targets. Each block has: **verified URL**, what to do, 
 - `outputs/plugin-hashlock/` — full plugin scaffold with package.json (`agentConfig` block), `src/index.ts` (Plugin export), 4 actions (`HASHLOCK_CREATE_INTENT`, `HASHLOCK_COMMIT_INTENT`, `HASHLOCK_EXPLAIN_INTENT`, `HASHLOCK_PARSE_NL`), 1 provider (`HASHLOCK_TIER_FLOOR`), zod environment validation, README.
 
 **What you do (≈10 minutes)**
-1. Create a public GitHub repo: `BarisSozen/plugin-hashlock`. README/license/.gitignore: skip — already in scaffold.
+1. Create a public GitHub repo: `Hashlock-Tech/plugin-hashlock`. README/license/.gitignore: skip — already in scaffold.
 2. From `outputs/plugin-hashlock/`:
    ```
    git init
    git add .
    git commit -m "Initial: @hashlock/plugin-hashlock"
    git branch -M main
-   git remote add origin git@github.com:BarisSozen/plugin-hashlock.git
+   git remote add origin git@github.com:Hashlock-Tech/plugin-hashlock.git
    git push -u origin main
    ```
 3. On the new repo's GitHub page → ⚙ Settings → About → add topic `elizaos-plugins` (the registry's auto-review workflow checks for this exact topic).
@@ -30,7 +30,7 @@ Five distinct submission targets. Each block has: **verified URL**, what to do, 
 5. Open https://github.com/elizaos-plugins/registry, click **Fork**.
 6. In your fork, edit `index.json` only — add **one** line in alphabetical order:
    ```json
-   "@hashlock/plugin-hashlock": "github:BarisSozen/plugin-hashlock",
+   "@hashlock/plugin-hashlock": "github:Hashlock-Tech/plugin-hashlock",
    ```
 7. Commit, then click **Compare & pull request** → title `add @hashlock/plugin-hashlock` → submit. The Claude Code review workflow runs automatically; if it passes, a maintainer merges.
 

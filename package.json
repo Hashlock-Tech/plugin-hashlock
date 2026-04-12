@@ -86,6 +86,6 @@
   "homepage": "https://hashlock.xyz",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BarisSozen/plugin-hashlock.git"
+    "url": "git+https://github.com/Hashlock-Tech/plugin-hashlock.git"
   }
 }
