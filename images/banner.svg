@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" fill="none">
+  <rect width="1280" height="640" fill="#0A1628"/>
+  <g transform="translate(115.0, 194.0) scale(3.5)">
+    <svg x="0" y="0" width="72" height="72" viewBox="0 0 100 100">
+      <g transform="translate(50,50) skewX(-14) translate(-50,-50)">
+        <line x1="33" y1="-5"  x2="33" y2="105" stroke="#FFFFFF" stroke-width="16" stroke-linecap="butt"/>
+        <line x1="67" y1="-5"  x2="67" y2="105" stroke="#FFFFFF" stroke-width="16" stroke-linecap="butt"/>
+        <line x1="11" y1="36"  x2="89" y2="36"  stroke="#00D4FF" stroke-width="10" stroke-linecap="round"/>
+        <line x1="11" y1="68"  x2="89" y2="68"  stroke="#00D4FF" stroke-width="10" stroke-linecap="round"/>
+      </g>
+    </svg>
+    <line x1="86" y1="14" x2="86" y2="58" stroke="#FFFFFF" stroke-width="0.75" stroke-opacity="0.18"/>
+    <text font-family="Inter, 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="30" letter-spacing="-0.5">
+      <tspan x="98" y="43" font-weight="300" fill="#FFFFFF">Hash</tspan><tspan font-weight="700" fill="#00D4FF">Lock</tspan>
+    </text>
+    <text x="98" y="60" font-family="Inter, 'DejaVu Sans', Helvetica, Arial, sans-serif"
+          font-size="7.5" font-weight="500" letter-spacing="2.6"
+          fill="#00D4FF" opacity="0.5">ATOMIC OTC SETTLEMENT</text>
+  </g>
+</svg>

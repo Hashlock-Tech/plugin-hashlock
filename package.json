@@ -1,0 +1,91 @@
+{
+  "name": "@hashlock/plugin-hashlock",
+  "version": "0.1.0",
+  "description": "ElizaOS plugin for Hashlock — agent-native intent protocol with counterparty attestation tiers",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "images"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "dev": "tsup src/index.ts --format esm --dts --watch",
+    "lint": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@elizaos/core": "^1.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  },
+  "peerDependencies": {
+    "@elizaos/core": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "agentConfig": {
+    "pluginType": "elizaos:plugin:1.0.0",
+    "pluginParameters": {
+      "HASHLOCK_API_URL": {
+        "type": "string",
+        "description": "Hashlock protocol API base URL",
+        "required": false,
+        "default": "https://api.hashlock.xyz",
+        "sensitive": false
+      },
+      "HASHLOCK_API_KEY": {
+        "type": "string",
+        "description": "Hashlock API key for the operator account",
+        "required": true,
+        "sensitive": true
+      },
+      "HASHLOCK_MIN_COUNTERPARTY_TIER": {
+        "type": "string",
+        "description": "Minimum counterparty attestation tier this agent will trade with: NONE | BASIC | STANDARD | ENHANCED | INSTITUTIONAL",
+        "required": false,
+        "default": "STANDARD",
+        "sensitive": false
+      },
+      "HASHLOCK_OPERATOR_ADDRESS": {
+        "type": "string",
+        "description": "EVM address the agent uses to sign Hashlock intents",
+        "required": true,
+        "sensitive": false
+      }
+    }
+  },
+  "keywords": [
+    "elizaos",
+    "elizaos-plugins",
+    "plugin",
+    "hashlock",
+    "intents",
+    "defi",
+    "agent"
+  ],
+  "license": "MIT",
+  "homepage": "https://hashlock.xyz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarisSozen/plugin-hashlock.git"
+  }
+}
