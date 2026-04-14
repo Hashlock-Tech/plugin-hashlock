@@ -49,7 +49,7 @@
         "type": "string",
         "description": "Hashlock protocol API base URL",
         "required": false,
-        "default": "https://api.hashlock.xyz",
+        "default": "https://api.hashlock.markets",
         "sensitive": false
       },
       "HASHLOCK_API_KEY": {
@@ -83,7 +83,7 @@
     "agent"
   ],
   "license": "MIT",
-  "homepage": "https://hashlock.xyz",
+  "homepage": "https://hashlock.markets",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hashlock-Tech/plugin-hashlock.git"

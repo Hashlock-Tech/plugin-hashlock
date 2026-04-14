@@ -41,7 +41,7 @@ Then add to your character file:
 
 | Variable | Required | Default | Notes |
 |---|---|---|---|
-| `HASHLOCK_API_URL` | no | `https://api.hashlock.xyz` | Hashlock API base URL |
+| `HASHLOCK_API_URL` | no | `https://api.hashlock.markets` | Hashlock API base URL |
 | `HASHLOCK_API_KEY` | **yes** | — | Operator API key (sensitive) |
 | `HASHLOCK_OPERATOR_ADDRESS` | **yes** | — | EVM address the agent signs intents from |
 | `HASHLOCK_MIN_COUNTERPARTY_TIER` | no | `STANDARD` | One of `NONE` / `BASIC` / `STANDARD` / `ENHANCED` / `INSTITUTIONAL` |
@@ -71,7 +71,7 @@ actions             provider
    ↓                    ↓
 HashlockClient    tier-floor context
    ↓
-api.hashlock.xyz
+api.hashlock.markets
    ↓
 on-chain settlement contract
 ```
@@ -99,6 +99,6 @@ MIT — see [LICENSE](./LICENSE).
 
 ## Links
 
-- Hashlock: <https://hashlock.xyz>
+- Hashlock: <https://hashlock.markets>
 - Safe Guard reference: <https://github.com/BarisSozen/safe-hashlock-demo>
 - ElizaOS: <https://elizaos.ai>

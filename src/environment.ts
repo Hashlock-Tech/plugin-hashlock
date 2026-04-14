@@ -7,7 +7,7 @@ export type Tier = (typeof TIER_ORDER)[number];
 export const tierRank = (tier: Tier): number => TIER_ORDER.indexOf(tier);
 
 export const hashlockEnvSchema = z.object({
-  HASHLOCK_API_URL: z.string().url().default("https://api.hashlock.xyz"),
+  HASHLOCK_API_URL: z.string().url().default("https://api.hashlock.markets"),
   HASHLOCK_API_KEY: z.string().min(1, "HASHLOCK_API_KEY is required"),
   HASHLOCK_MIN_COUNTERPARTY_TIER: z
     .enum(TIER_ORDER)
