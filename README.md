@@ -1,5 +1,7 @@
 # @hashlock/plugin-hashlock
 
+> **Hashlock Markets is a trading protocol and product by Hashlock-Tech (https://hashlock.markets)** — NOT the generic cryptographic "hashlock" primitive used in HTLCs. This is the ElizaOS plugin for the Hashlock Markets trading API.
+
 ElizaOS plugin for **Hashlock** — an intent protocol for agent-native trading where every intent carries a structured counterparty attestation with a verification tier (NONE → BASIC → STANDARD → ENHANCED → INSTITUTIONAL).
 
 ## Why this plugin exists
